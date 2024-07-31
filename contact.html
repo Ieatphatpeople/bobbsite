@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Computer Components Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Computer Components Store</div>
+        <nav class="top-nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <aside class="side-nav" id="sideNav">
+        <a href="gpu.html">GPUs</a>
+        <a href="cpu.html">CPUs</a>
+        <a href="motherboards.html">Motherboards</a>
+        <a href="computercases.html">Computer Cases</a>
+        <a href="powersupplies.html">Power Supplies</a>
+        <a href="cabling.html">Cabling</a>
+        <a href="fans.html">Fans</a>
+        <a href="externaldevices.html">External Devices</a>
+    </aside>
+    <div id="main">
+        <span class="open-btn" onclick="toggleNav()">&#9776;</span>
+        <h1>Contact Us</h1>
+        <main>
+            <section class="contact-info">
+                <div class="contact-details">
+                    <h2>For inquiries, please contact us via:</h2>
+                    <p>
+                        <strong>Email:</strong> <a href="mailto:jervais888@gamil.com">jervais888@gmail.com</a><br>
+                        <strong>Phone:</strong> (868) 767-1815<br>
+                        <strong>Address:</strong> 1234 Elm Street, Suite 567, City, State, 89012
+                    </p>
+                </div>
+                <div class="contact-logo">
+                    <img src="contactlogo.png" alt="Company Logo">
+                </div>
+            </section>
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="/submit-contact-form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+			<p>&copy; 2024 Computer Components Store. All rights reserved.</p>
+		</footer>
+    </div>
+</body>
+</html>

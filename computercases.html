@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Cases - Kapkan's PC Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Kapkan's PC Heaven</div>
+        <nav class="top-nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <aside class="side-nav" id="sideNav">
+        <a href="gpu.html">GPUs</a>
+        <a href="cpu.html">CPUs</a>
+        <a href="motherboards.html">Motherboards</a>
+        <a href="computercases.html">Computer Cases</a>
+        <a href="powersupplies.html">Power Supplies</a>
+        <a href="cabling.html">Cabling</a>
+        <a href="fans.html">Fans</a>
+        <a href="externaldevices.html">External Devices</a>
+    </aside>
+    <div id="main">
+        <span class="open-btn" onclick="toggleNav()">&#9776;</span>
+        <section class="shop-hero">
+            <h1>Computer Cases</h1>
+            <p>Explore our range of computer cases, from compact designs to full-tower options.</p>
+        </section>
+        <section class="shop-content">
+            <div class="product-list">
+                <div class="product" id="product1">
+                    <img src="computercase1.jpg" alt="Computer Case 1">
+                    <h2>NZXT H510</h2>
+                    <p>Mid Tower, Tempered Glass Side Panel, Front I/O USB Type-C, Water-Cooling Ready.</p>
+                    <p class="price">$70.00</p>
+                    <button onclick="addToCart('NZXT H510', 70, 'computercase1.jpg', 'Mid Tower, Tempered Glass Side Panel, Front I/O USB Type-C, Water-Cooling Ready.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product2">
+                    <img src="computercase2.jpg" alt="Computer Case 2">
+                    <h2>Cooler Master MasterBox Q300L</h2>
+                    <p>Micro ATX, Acrylic Side Panel, Front Mesh Ventilation, Modular I/O Panel.</p>
+                    <p class="price">$50.00</p>
+                    <button onclick="addToCart('Cooler Master MasterBox Q300L', 50, 'computercase2.jpg', 'Micro ATX, Acrylic Side Panel, Front Mesh Ventilation, Modular I/O Panel.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product3">
+                    <img src="computercase3.jpg" alt="Computer Case 3">
+                    <h2>Fractal Design Meshify C</h2>
+                    <p>ATX, Tempered Glass Side Panel, High Airflow Design, Compact Mid Tower.</p>
+                    <p class="price">$90.00</p>
+                    <button onclick="addToCart('Fractal Design Meshify C', 90, 'computercase3.jpg', 'ATX, Tempered Glass Side Panel, High Airflow Design, Compact Mid Tower.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product4">
+                    <img src="computercase4.jpg" alt="Computer Case 4">
+                    <h2>Corsair iCUE 4000X RGB</h2>
+                    <p>ATX, Tempered Glass Side Panel, Front RGB Lighting, Cable Management.</p>
+                    <p class="price">$130.00</p>
+                    <button onclick="addToCart('Corsair iCUE 4000X RGB', 130, 'computercase4.jpg', 'ATX, Tempered Glass Side Panel, Front RGB Lighting, Cable Management.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product5">
+                    <img src="computercase5.jpg" alt="Computer Case 5">
+                    <h2>Phanteks Eclipse P400A</h2>
+                    <p>ATX, Mesh Front Panel, Tempered Glass Side Panel, High Airflow Design.</p>
+                    <p class="price">$80.00</p>
+                    <button onclick="addToCart('Phanteks Eclipse P400A', 80, 'computercase5.jpg', 'ATX, Mesh Front Panel, Tempered Glass Side Panel, High Airflow Design.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product6">
+                    <img src="computercase6.jpg" alt="Computer Case 6">
+                    <h2>Lian Li PC-O11 Dynamic</h2>
+                    <p>ATX, Tempered Glass Side and Front Panels, Dual-Chamber Design, Water-Cooling Ready.</p>
+                    <p class="price">$140.00</p>
+                    <button onclick="addToCart('Lian Li PC-O11 Dynamic', 140, 'computercase6.jpg', 'ATX, Tempered Glass Side and Front Panels, Dual-Chamber Design, Water-Cooling Ready.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product7">
+                    <img src="computercase7.jpg" alt="Computer Case 7">
+                    <h2>Thermaltake Core P3</h2>
+                    <p>ATX, Open Frame Design, Tempered Glass Side Panel, Wall-Mountable.</p>
+                    <p class="price">$120.00</p>
+                    <button onclick="addToCart('Thermaltake Core P3', 120, 'computercase7.jpg', 'ATX, Open Frame Design, Tempered Glass Side Panel, Wall-Mountable.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product8">
+                    <img src="computercase8.jpg" alt="Computer Case 8">
+                    <h2>Be quiet! Dark Base Pro 900</h2>
+                    <p>Full Tower, Tempered Glass Side Panel, Modular Design, Silent Operation.</p>
+                    <p class="price">$250.00</p>
+                    <button onclick="addToCart('Be quiet! Dark Base Pro 900', 250, 'computercase8.jpg', 'Full Tower, Tempered Glass Side Panel, Modular Design, Silent Operation.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product9">
+                    <img src="computercase9.jpg" alt="Computer Case 9">
+                    <h2>NZXT H1</h2>
+                    <p>Mini ITX, Tempered Glass Side Panel, Integrated AIO Cooling, Compact Vertical Design.</p>
+                    <p class="price">$350.00</p>
+                    <button onclick="addToCart('NZXT H1', 350, 'computercase9.jpg', 'Mini ITX, Tempered Glass Side Panel, Integrated AIO Cooling, Compact Vertical Design.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product10">
+                    <img src="computercase10.jpg" alt="Computer Case 10">
+                    <h2>Cooler Master HAF XB EVO</h2>
+                    <p>Mid Tower, High Airflow Design, Horizontal Motherboard Tray, Removable Top Panel.</p>
+                    <p class="price">$100.00</p>
+                    <button onclick="addToCart('Cooler Master HAF XB EVO', 100, 'computercase10.jpg', 'Mid Tower, High Airflow Design, Horizontal Motherboard Tray, Removable Top Panel.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product11">
+                    <img src="computercase11.jpg" alt="Computer Case 11">
+                    <h2>Fractal Design Define R6</h2>
+                    <p>ATX, Tempered Glass Side Panel, Modular Interior, Silent Operation.</p>
+                    <p class="price">$150.00</p>
+                    <button onclick="addToCart('Fractal Design Define R6', 150, 'computercase11.jpg', 'ATX, Tempered Glass Side Panel, Modular Interior, Silent Operation.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product12">
+                    <img src="computercase12.jpg" alt="Computer Case 12">
+                    <h2>Thermaltake Versa H18</h2>
+                    <p>Micro ATX, Tempered Glass Side Panel, High Airflow Design, Compact Design.</p>
+                    <p class="price">$60.00</p>
+                    <button onclick="addToCart('Thermaltake Versa H18', 60, 'computercase12.jpg', 'Micro ATX, Tempered Glass Side Panel, High Airflow Design, Compact Design.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product13">
+                    <img src="computercase13.jpg" alt="Computer Case 13">
+                    <h2>Phanteks Enthoo Pro</h2>
+                    <p>Full Tower, High Airflow Design, Modular HDD Cages, Water-Cooling Ready.</p>
+                    <p class="price">$100.00</p>
+                    <button onclick="addToCart('Phanteks Enthoo Pro', 100, 'computercase13.jpg', 'Full Tower, High Airflow Design, Modular HDD Cages, Water-Cooling Ready.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product14">
+                    <img src="computercase14.jpg" alt="Computer Case 14">
+                    <h2>SilverStone Raven RVZ02</h2>
+                    <p>Mini ITX, Slim Form Factor, Tool-less Design, Horizontal or Vertical Orientation.</p>
+                    <p class="price">$80.00</p>
+                    <button onclick="addToCart('SilverStone Raven RVZ02', 80, 'computercase14.jpg', 'Mini ITX, Slim Form Factor, Tool-less Design, Horizontal or Vertical Orientation.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product15">
+                    <img src="computercase15.jpg" alt="Computer Case 15">
+                    <h2>NZXT H700i</h2>
+                    <p>Mid Tower, Tempered Glass Side Panel, RGB Lighting, Smart Device V2.</p>
+                    <p class="price">$170.00</p>
+                    <button onclick="addToCart('NZXT H700i', 170, 'computercase15.jpg', 'Mid Tower, Tempered Glass Side Panel, RGB Lighting, Smart Device V2.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product16">
+                    <img src="computercase16.jpg" alt="Computer Case 16">
+                    <h2>Cooler Master Cosmos C700P</h2>
+                    <p>Full Tower, Curved Tempered Glass Side Panels, RGB Lighting, Flexible Layout.</p>
+                    <p class="price">$300.00</p>
+                    <button onclick="addToCart('Cooler Master Cosmos C700P', 300, 'computercase16.jpg', 'Full Tower, Curved Tempered Glass Side Panels, RGB Lighting, Flexible Layout.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product17">
+                    <img src="computercase17.jpg" alt="Computer Case 17">
+                    <h2>Thermaltake Level 20 VT</h2>
+                    <p>Micro ATX, Tempered Glass Panels, High Airflow Design, Compact Design.</p>
+                    <p class="price">$110.00</p>
+                    <button onclick="addToCart('Thermaltake Level 20 VT', 110, 'computercase17.jpg', 'Micro ATX, Tempered Glass Panels, High Airflow Design, Compact Design.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product18">
+                    <img src="computercase18.jpg" alt="Computer Case 18">
+                    <h2>Phanteks Evolv Shift</h2>
+                    <p>Mini ITX, Tempered Glass Panels, Vertical Design, Integrated RGB Lighting.</p>
+                    <p class="price">$160.00</p>
+                    <button onclick="addToCart('Phanteks Evolv Shift', 160, 'computercase18.jpg', 'Mini ITX, Tempered Glass Panels, Vertical Design, Integrated RGB Lighting.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product19">
+                    <img src="computercase19.jpg" alt="Computer Case 19">
+                    <h2>Fractal Design Define 7</h2>
+                    <p>ATX, Tempered Glass Side Panel, Modular Interior, Silent Operation.</p>
+                    <p class="price">$180.00</p>
+                    <button onclick="addToCart('Fractal Design Define 7', 180, 'computercase19.jpg', 'ATX, Tempered Glass Side Panel, Modular Interior, Silent Operation.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product20">
+                    <img src="computercase20.jpg" alt="Computer Case 20">
+                    <h2>Thermaltake Tower 900</h2>
+                    <p>Full Tower, Tempered Glass Panels, Vertical Chamber Design, Water-Cooling Ready.</p>
+                    <p class="price">$250.00</p>
+                    <button onclick="addToCart('Thermaltake Tower 900', 250, 'computercase20.jpg', 'Full Tower, Tempered Glass Panels, Vertical Chamber Design, Water-Cooling Ready.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product21">
+                    <img src="computercase21.jpg" alt="Computer Case 21">
+                    <h2>Cooler Master MasterCase H500P</h2>
+                    <p>ATX, Mesh Front Panel, RGB Lighting, Tempered Glass Side Panel.</p>
+                    <p class="price">$150.00</p>
+                    <button onclick="addToCart('Cooler Master MasterCase H500P', 150, 'computercase21.jpg', 'ATX, Mesh Front Panel, RGB Lighting, Tempered Glass Side Panel.')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kapkan's PC Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

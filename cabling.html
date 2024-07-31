@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabling - Kapkan's PC Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        .subcategory {
+            display: none;
+            margin-top: 10px;
+        }
+        .subcategory.show {
+            display: block;
+        }
+        .category h2 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Kapkan's PC Heaven</div>
+        <nav class="top-nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <aside class="side-nav" id="sideNav">
+        <a href="gpu.html">GPUs</a>
+        <a href="cpu.html">CPUs</a>
+        <a href="motherboards.html">Motherboards</a>
+        <a href="computercases.html">Computer Cases</a>
+        <a href="powersupplies.html">Power Supplies</a>
+        <a href="cabling.html">Cabling</a>
+        <a href="fans.html">Fans</a>
+        <a href="externaldevices.html">External Devices</a>
+    </aside>
+    <div id="main">
+        <span class="open-btn" onclick="toggleNav()">&#9776;</span>
+        <section class="shop-hero">
+            <h1>Cabling</h1>
+            <p>Explore our selection of essential cables for your PC build.</p>
+        </section>
+        <section class="shop-content">
+            <!-- Power Cables -->
+            <div class="category" onclick="toggleDropdown('power-cables')">
+                <h2>Power Cables &#9662;</h2>
+                <div class="subcategory" id="power-cables">
+                    <div class="product">
+                        <img src="24pin_atx1.jpg" alt="24-pin ATX Cable 1">
+                        <h3>24-pin ATX Cable 1</h3>
+                        <p>High-quality 24-pin ATX power cable for reliable performance.</p>
+                        <p class="price">$15.00</p>
+                        <button onclick="addToCart('24-pin ATX Cable 1', 15, '24pin_atx1.jpg', 'High-quality 24-pin ATX power cable for reliable performance.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="24pin_atx2.jpg" alt="24-pin ATX Cable 2">
+                        <h3>24-pin ATX Cable 2</h3>
+                        <p>Durable 24-pin ATX cable for stable power delivery.</p>
+                        <p class="price">$16.00</p>
+                        <button onclick="addToCart('24-pin ATX Cable 2', 16, '24pin_atx2.jpg', 'Durable 24-pin ATX cable for stable power delivery.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="8pin_cpu1.jpg" alt="8-pin CPU Cable 1">
+                        <h3>8-pin CPU Cable 1</h3>
+                        <p>High-efficiency 8-pin CPU power cable for stable performance.</p>
+                        <p class="price">$12.00</p>
+                        <button onclick="addToCart('8-pin CPU Cable 1', 12, '8pin_cpu1.jpg', 'High-efficiency 8-pin CPU power cable for stable performance.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="8pin_cpu2.jpg" alt="8-pin CPU Cable 2">
+                        <h3>8-pin CPU Cable 2</h3>
+                        <p>Reliable 8-pin CPU cable with reinforced connectors.</p>
+                        <p class="price">$13.00</p>
+                        <button onclick="addToCart('8-pin CPU Cable 2', 13, '8pin_cpu2.jpg', 'Reliable 8-pin CPU cable with reinforced connectors.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="pcie_power1.jpg" alt="PCIe Power Cable 1">
+                        <h3>PCIe Power Cable 1</h3>
+                        <p>Standard PCIe power cable for graphics cards and more.</p>
+                        <p class="price">$10.00</p>
+                        <button onclick="addToCart('PCIe Power Cable 1', 10, 'pcie_power1.jpg', 'Standard PCIe power cable for graphics cards and more.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="pcie_power2.jpg" alt="PCIe Power Cable 2">
+                        <h3>PCIe Power Cable 2</h3>
+                        <p>Durable PCIe power cable for high-performance GPUs.</p>
+                        <p class="price">$11.00</p>
+                        <button onclick="addToCart('PCIe Power Cable 2', 11, 'pcie_power2.jpg', 'Durable PCIe power cable for high-performance GPUs.')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Data Cables -->
+            <div class="category" onclick="toggleDropdown('data-cables')">
+                <h2>Data Cables &#9662;</h2>
+                <div class="subcategory" id="data-cables">
+                    <div class="product">
+                        <img src="sata_data1.jpg" alt="SATA Data Cable 1">
+                        <h3>SATA Data Cable 1</h3>
+                        <p>Reliable SATA data cable for fast data transfer.</p>
+                        <p class="price">$8.00</p>
+                        <button onclick="addToCart('SATA Data Cable 1', 8, 'sata_data1.jpg', 'Reliable SATA data cable for fast data transfer.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="sata_data2.jpg" alt="SATA Data Cable 2">
+                        <h3>SATA Data Cable 2</h3>
+                        <p>High-speed SATA data cable for efficient performance.</p>
+                        <p class="price">$9.00</p>
+                        <button onclick="addToCart('SATA Data Cable 2', 9, 'sata_data2.jpg', 'High-speed SATA data cable for efficient performance.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="nvme_m2_screw1.jpg" alt="NVMe M.2 Screw 1">
+                        <h3>NVMe M.2 Screw 1</h3>
+                        <p>Essential screw for NVMe M.2 drives installation.</p>
+                        <p class="price">$1.00</p>
+                        <button onclick="addToCart('NVMe M.2 Screw 1', 1, 'nvme_m2_screw1.jpg', 'Essential screw for NVMe M.2 drives installation.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="nvme_m2_screw2.jpg" alt="NVMe M.2 Screw 2">
+                        <h3>NVMe M.2 Screw 2</h3>
+                        <p>High-quality screw for NVMe M.2 SSDs.</p>
+                        <p class="price">$1.50</p>
+                        <button onclick="addToCart('NVMe M.2 Screw 2', 1.50, 'nvme_m2_screw2.jpg', 'High-quality screw for NVMe M.2 SSDs.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="sata_data3.jpg" alt="SATA Data Cable 3">
+                        <h3>SATA Data Cable 3</h3>
+                        <p>Durable SATA data cable for stable performance.</p>
+                        <p class="price">$8.50</p>
+                        <button onclick="addToCart('SATA Data Cable 3', 8.50, 'sata_data3.jpg', 'Durable SATA data cable for stable performance.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="sata_data4.jpg" alt="SATA Data Cable 4">
+                        <h3>SATA Data Cable 4</h3>
+                        <p>High-speed SATA data cable with shielding for improved performance.</p>
+                        <p class="price">$9.50</p>
+                        <button onclick="addToCart('SATA Data Cable 4', 9.50, 'sata_data4.jpg', 'High-speed SATA data cable with shielding for improved performance.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="nvme_m2_screw3.jpg" alt="NVMe M.2 Screw 3">
+                        <h3>NVMe M.2 Screw 3</h3>
+                        <p>Package of NVMe M.2 screws for multiple installations.</p>
+                        <p class="price">$2.00</p>
+                        <button onclick="addToCart('NVMe M.2 Screw 3', 2, 'nvme_m2_screw3.jpg', 'Package of NVMe M.2 screws for multiple installations.')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Peripheral and Front Panel Cables -->
+            <div class="category" onclick="toggleDropdown('peripheral-front-panel-cables')">
+                <h2>Peripheral and Front Panel Cables &#9662;</h2>
+                <div class="subcategory" id="peripheral-front-panel-cables">
+                    <div class="product">
+                        <img src="front_panel_connectors1.jpg" alt="Front Panel Connectors 1">
+                        <h3>Front Panel Connectors 1</h3>
+                        <p>Essential connectors for front panel controls and indicators.</p>
+                        <p class="price">$7.00</p>
+                        <button onclick="addToCart('Front Panel Connectors 1', 7, 'front_panel_connectors1.jpg', 'Essential connectors for front panel controls and indicators.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="front_panel_connectors2.jpg" alt="Front Panel Connectors 2">
+                        <h3>Front Panel Connectors 2</h3>
+                        <p>High-quality front panel connectors for PC cases.</p>
+                        <p class="price">$7.50</p>
+                        <button onclick="addToCart('Front Panel Connectors 2', 7.50, 'front_panel_connectors2.jpg', 'High-quality front panel connectors for PC cases.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="usb_headers1.jpg" alt="USB Headers 1">
+                        <h3>USB Headers 1</h3>
+                        <p>Standard USB headers for front panel USB ports.</p>
+                        <p class="price">$5.00</p>
+                        <button onclick="addToCart('USB Headers 1', 5, 'usb_headers1.jpg', 'Standard USB headers for front panel USB ports.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="usb_headers2.jpg" alt="USB Headers 2">
+                        <h3>USB Headers 2</h3>
+                        <p>High-speed USB headers for efficient connectivity.</p>
+                        <p class="price">$5.50</p>
+                        <button onclick="addToCart('USB Headers 2', 5.50, 'usb_headers2.jpg', 'High-speed USB headers for efficient connectivity.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="audio_header1.jpg" alt="Audio Header 1">
+                        <h3>Audio Header 1</h3>
+                        <p>Audio header for connecting front panel audio jacks.</p>
+                        <p class="price">$4.00</p>
+                        <button onclick="addToCart('Audio Header 1', 4, 'audio_header1.jpg', 'Audio header for connecting front panel audio jacks.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="audio_header2.jpg" alt="Audio Header 2">
+                        <h3>Audio Header 2</h3>
+                        <p>Premium audio header for high-quality sound.</p>
+                        <p class="price">$4.50</p>
+                        <button onclick="addToCart('Audio Header 2', 4.50, 'audio_header2.jpg', 'Premium audio header for high-quality sound.')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Cooling Cables -->
+            <div class="category" onclick="toggleDropdown('cooling-cables')">
+                <h2>Cooling Cables &#9662;</h2>
+                <div class="subcategory" id="cooling-cables">
+                    <div class="product">
+                        <img src="fan_cable1.jpg" alt="Fan Cable 1">
+                        <h3>Fan Cable 1</h3>
+                        <p>Basic fan cable for PC cooling systems.</p>
+                        <p class="price">$6.00</p>
+                        <button onclick="addToCart('Fan Cable 1', 6, 'fan_cable1.jpg', 'Basic fan cable for PC cooling systems.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="fan_cable2.jpg" alt="Fan Cable 2">
+                        <h3>Fan Cable 2</h3>
+                        <p>High-quality fan cable for efficient cooling.</p>
+                        <p class="price">$6.50</p>
+                        <button onclick="addToCart('Fan Cable 2', 6.50, 'fan_cable2.jpg', 'High-quality fan cable for efficient cooling.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="fan_cable3.jpg" alt="Fan Cable 3">
+                        <h3>Fan Cable 3</h3>
+                        <p>Durable fan cable for reliable cooling.</p>
+                        <p class="price">$6.75</p>
+                        <button onclick="addToCart('Fan Cable 3', 6.75, 'fan_cable3.jpg', 'Durable fan cable for reliable cooling.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="fan_cable4.jpg" alt="Fan Cable 4">
+                        <h3>Fan Cable 4</h3>
+                        <p>Flexible fan cable for easy installation.</p>
+                        <p class="price">$7.00</p>
+                        <button onclick="addToCart('Fan Cable 4', 7, 'fan_cable4.jpg', 'Flexible fan cable for easy installation.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="fan_cable5.jpg" alt="Fan Cable 5">
+                        <h3>Fan Cable 5</h3>
+                        <p>High-performance fan cable for enhanced airflow.</p>
+                        <p class="price">$7.50</p>
+                        <button onclick="addToCart('Fan Cable 5', 7.50, 'fan_cable5.jpg', 'High-performance fan cable for enhanced airflow.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="fan_cable6.jpg" alt="Fan Cable 6">
+                        <h3>Fan Cable 6</h3>
+                        <p>Premium fan cable for optimal cooling.</p>
+                        <p class="price">$8.00</p>
+                        <button onclick="addToCart('Fan Cable 6', 8, 'fan_cable6.jpg', 'Premium fan cable for optimal cooling.')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Optional/Additional Cables -->
+            <div class="category" onclick="toggleDropdown('optional-additional-cables')">
+                <h2>Optional/Additional Cables &#9662;</h2>
+                <div class="subcategory" id="optional-additional-cables">
+                    <div class="product">
+                        <img src="sata_power1.jpg" alt="SATA Power Cable 1">
+                        <h3>SATA Power Cable 1</h3>
+                        <p>Additional SATA power cable for storage devices.</p>
+                        <p class="price">$5.00</p>
+                        <button onclick="addToCart('SATA Power Cable 1', 5, 'sata_power1.jpg', 'Additional SATA power cable for storage devices.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="sata_power2.jpg" alt="SATA Power Cable 2">
+                        <h3>SATA Power Cable 2</h3>
+                        <p>High-quality SATA power cable for reliable power.</p>
+                        <p class="price">$5.50</p>
+                        <button onclick="addToCart('SATA Power Cable 2', 5.50, 'sata_power2.jpg', 'High-quality SATA power cable for reliable power.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="rgb_argb1.jpg" alt="RGB/ARGB Cable 1">
+                        <h3>RGB/ARGB Cable 1</h3>
+                        <p>RGB/ARGB cable for customizable lighting.</p>
+                        <p class="price">$8.00</p>
+                        <button onclick="addToCart('RGB/ARGB Cable 1', 8, 'rgb_argb1.jpg', 'RGB/ARGB cable for customizable lighting.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="rgb_argb2.jpg" alt="RGB/ARGB Cable 2">
+                        <h3>RGB/ARGB Cable 2</h3>
+                        <p>Flexible RGB/ARGB cable for vibrant colors.</p>
+                        <p class="price">$8.50</p>
+                        <button onclick="addToCart('RGB/ARGB Cable 2', 8.50, 'rgb_argb2.jpg', 'Flexible RGB/ARGB cable for vibrant colors.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="extension_cable1.jpg" alt="Extension Cable 1">
+                        <h3>Extension Cable 1</h3>
+                        <p>Extension cable for extra length and flexibility.</p>
+                        <p class="price">$6.00</p>
+                        <button onclick="addToCart('Extension Cable 1', 6, 'extension_cable1.jpg', 'Extension cable for extra length and flexibility.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="extension_cable2.jpg" alt="Extension Cable 2">
+                        <h3>Extension Cable 2</h3>
+                        <p>High-quality extension cable for enhanced reach.</p>
+                        <p class="price">$6.50</p>
+                        <button onclick="addToCart('Extension Cable 2', 6.50, 'extension_cable2.jpg', 'High-quality extension cable for enhanced reach.')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kapkan's PC Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

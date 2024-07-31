@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPUs - Kapkan's PC Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Kapkan's PC Heaven</div>
+        <nav class="top-nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <aside class="side-nav" id="sideNav">
+        <a href="gpu.html">GPUs</a>
+        <a href="cpu.html">CPUs</a>
+        <a href="motherboards.html">Motherboards</a>
+        <a href="computercases.html">Computer Cases</a>
+        <a href="powersupplies.html">Power Supplies</a>
+        <a href="cabling.html">Cabling</a>
+        <a href="fans.html">Fans</a>
+        <a href="externaldevices.html">External Devices</a>
+    </aside>
+    <div id="main">
+        <span class="open-btn" onclick="toggleNav()">&#9776;</span>
+        <section class="shop-hero">
+            <h1>GPUs</h1>
+            <p>Discover our range of high-performance GPUs to elevate your gaming and computing experience.</p>
+        </section>
+        <section class="shop-content">
+            <div class="product-list">
+                <div class="product" id="product1">
+                    <img src="gpu1.jpg" alt="GPU 1">
+                    <h2>NVIDIA GeForce RTX 3060</h2>
+                    <p>12GB GDDR6, DLSS and Ray Tracing support. Excellent for 1080p and 1440p gaming.</p>
+                    <p class="price">$350.00</p>
+                    <button onclick="addToCart('NVIDIA GeForce RTX 3060', 350, 'gpu1.jpg', '12GB GDDR6, DLSS and Ray Tracing support. Excellent for 1080p and 1440p gaming.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product2">
+                    <img src="gpu2.jpg" alt="GPU 2">
+                    <h2>AMD Radeon RX 6600 XT</h2>
+                    <p>8GB GDDR6, great for 1080p and 1440p gaming. High performance and efficiency.</p>
+                    <p class="price">$330.00</p>
+                    <button onclick="addToCart('AMD Radeon RX 6600 XT', 330, 'gpu2.jpg', '8GB GDDR6, great for 1080p and 1440p gaming. High performance and efficiency.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product3">
+                    <img src="gpu3.jpg" alt="GPU 3">
+                    <h2>NVIDIA GeForce RTX 3070</h2>
+                    <p>8GB GDDR6, superior performance for 4K gaming and high-end applications.</p>
+                    <p class="price">$550.00</p>
+                    <button onclick="addToCart('NVIDIA GeForce RTX 3070', 550, 'gpu3.jpg', '8GB GDDR6, superior performance for 4K gaming and high-end applications.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product4">
+                    <img src="gpu4.jpg" alt="GPU 4">
+                    <h2>AMD Radeon RX 6700 XT</h2>
+                    <p>12GB GDDR6, excellent for 1440p and entry-level 4K gaming.</p>
+                    <p class="price">$480.00</p>
+                    <button onclick="addToCart('AMD Radeon RX 6700 XT', 480, 'gpu4.jpg', '12GB GDDR6, excellent for 1440p and entry-level 4K gaming.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product5">
+                    <img src="gpu5.jpg" alt="GPU 5">
+                    <h2>NVIDIA GeForce RTX 3080</h2>
+                    <p>10GB GDDR6X, top-tier performance for 4K gaming and demanding applications.</p>
+                    <p class="price">$700.00</p>
+                    <button onclick="addToCart('NVIDIA GeForce RTX 3080', 700, 'gpu5.jpg', '10GB GDDR6X, top-tier performance for 4K gaming and demanding applications.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product6">
+                    <img src="gpu6.jpg" alt="GPU 6">
+                    <h2>AMD Radeon RX 6900 XT</h2>
+                    <p>16GB GDDR6, high-end performance for 4K gaming and creative tasks.</p>
+                    <p class="price">$900.00</p>
+                    <button onclick="addToCart('AMD Radeon RX 6900 XT', 900, 'gpu6.jpg', '16GB GDDR6, high-end performance for 4K gaming and creative tasks.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product7">
+                    <img src="gpu7.jpg" alt="GPU 7">
+                    <h2>NVIDIA GeForce RTX 3090</h2>
+                    <p>24GB GDDR6X, the ultimate choice for 4K gaming and high-end creative work.</p>
+                    <p class="price">$1,500.00</p>
+                    <button onclick="addToCart('NVIDIA GeForce RTX 3090', 1500, 'gpu7.jpg', '24GB GDDR6X, the ultimate choice for 4K gaming and high-end creative work.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product8">
+                    <img src="gpu8.jpg" alt="GPU 8">
+                    <h2>AMD Radeon RX 6800</h2>
+                    <p>16GB GDDR6, powerful performance for 1440p and 4K gaming.</p>
+                    <p class="price">$700.00</p>
+                    <button onclick="addToCart('AMD Radeon RX 6800', 700, 'gpu8.jpg', '16GB GDDR6, powerful performance for 1440p and 4K gaming.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product9">
+                    <img src="gpu9.jpg" alt="GPU 9">
+                    <h2>NVIDIA GeForce RTX 3050</h2>
+                    <p>8GB GDDR6, a budget-friendly option for 1080p gaming.</p>
+                    <p class="price">$250.00</p>
+                    <button onclick="addToCart('NVIDIA GeForce RTX 3050', 250, 'gpu9.jpg', '8GB GDDR6, a budget-friendly option for 1080p gaming.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product10">
+                    <img src="gpu10.jpg" alt="GPU 10">
+                    <h2>AMD Radeon RX 6500 XT</h2>
+                    <p>4GB GDDR6, ideal for budget gaming builds.</p>
+                    <p class="price">$180.00</p>
+                    <button onclick="addToCart('AMD Radeon RX 6500 XT', 180, 'gpu10.jpg', '4GB GDDR6, ideal for budget gaming builds.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product11">
+                    <img src="gpu11.jpg" alt="GPU 11">
+                    <h2>NVIDIA GeForce RTX 3070 Ti</h2>
+                    <p>8GB GDDR6X, enhanced performance for 4K and high-refresh-rate gaming.</p>
+                    <p class="price">$600.00</p>
+                    <button onclick="addToCart('NVIDIA GeForce RTX 3070 Ti', 600, 'gpu11.jpg', '8GB GDDR6X, enhanced performance for 4K and high-refresh-rate gaming.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product12">
+                    <img src="gpu12.jpg" alt="GPU 12">
+                    <h2>AMD Radeon RX 6700</h2>
+                    <p>12GB GDDR6, excellent for high-quality 1440p gaming.</p>
+                    <p class="price">$450.00</p>
+                    <button onclick="addToCart('AMD Radeon RX 6700', 450, 'gpu12.jpg', '12GB GDDR6, excellent for high-quality 1440p gaming.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product13">
+                    <img src="gpu13.jpg" alt="GPU 13">
+                    <h2>NVIDIA GeForce RTX 4060 Ti</h2>
+                    <p>8GB GDDR6, next-generation performance for 1440p gaming and more.</p>
+                    <p class="price">$400.00</p>
+                    <button onclick="addToCart('NVIDIA GeForce RTX 4060 Ti', 400, 'gpu13.jpg', '8GB GDDR6, next-generation performance for 1440p gaming and more.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product14">
+                    <img src="gpu14.jpg" alt="GPU 14">
+                    <h2>AMD Radeon RX 7900 XT</h2>
+                    <p>20GB GDDR6, high-performance GPU for 4K gaming and content creation.</p>
+                    <p class="price">$1,000.00</p>
+                    <button onclick="addToCart('AMD Radeon RX 7900 XT', 1000, 'gpu14.jpg', '20GB GDDR6, high-performance GPU for 4K gaming and content creation.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product15">
+                    <img src="gpu15.jpg" alt="GPU 15">
+                    <h2>NVIDIA GeForce RTX 4080</h2>
+                    <p>16GB GDDR6X, ultimate performance for 4K gaming and professional work.</p>
+                    <p class="price">$1,200.00</p>
+                    <button onclick="addToCart('NVIDIA GeForce RTX 4080', 1200, 'gpu15.jpg', '16GB GDDR6X, ultimate performance for 4K gaming and professional work.')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kapkan's PC Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

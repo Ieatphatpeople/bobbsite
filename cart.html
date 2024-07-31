@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Kapkan's PC Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body onload="displayCart()">
+    <header>
+        <div class="logo">Kapkan's PC Heaven</div>
+        <nav class="top-nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <aside class="side-nav" id="sideNav">
+        <a href="gpu.html">GPUs</a>
+        <a href="cpu.html">CPUs</a>
+        <a href="motherboards.html">Motherboards</a>
+        <a href="computercases.html">Computer Cases</a>
+        <a href="powersupplies.html">Power Supplies</a>
+        <a href="cabling.html">Cabling</a>
+        <a href="fans.html">Fans</a>
+        <a href="externaldevices.html">External Devices</a>
+    </aside>
+    <div id="main">
+        <span class="open-btn" onclick="toggleNav()">&#9776;</span>
+        <section class="cart-section">
+            <h1>Your Cart</h1>
+            <div id="cartItems" class="cart-items"></div>
+            <div class="cart-summary">
+                <h2>Total: $<span id="totalPrice">0.00</span></h2>
+                <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kapkan's PC Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

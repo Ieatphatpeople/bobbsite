@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPUs - Kapkan's PC Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Kapkan's PC Heaven</div>
+        <nav class="top-nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <aside class="side-nav" id="sideNav">
+        <a href="gpu.html">GPUs</a>
+        <a href="cpu.html">CPUs</a>
+        <a href="motherboards.html">Motherboards</a>
+        <a href="computercases.html">Computer Cases</a>
+        <a href="powersupplies.html">Power Supplies</a>
+        <a href="cabling.html">Cabling</a>
+        <a href="fans.html">Fans</a>
+        <a href="externaldevices.html">External Devices</a>
+    </aside>
+    <div id="main">
+        <span class="open-btn" onclick="toggleNav()">&#9776;</span>
+        <section class="shop-hero">
+            <h1>CPUs</h1>
+            <p>Browse our selection of high-performance CPUs for all your computing needs.</p>
+        </section>
+        <section class="shop-content">
+            <div class="product-list">
+                <div class="product" id="product1">
+                    <img src="cpu1.jpg" alt="CPU 1">
+                    <h2>Intel Core i3-10100</h2>
+                    <p>4 Cores, 8 Threads, 3.6 GHz Base Clock. Affordable performance for everyday tasks.</p>
+                    <p class="price">$100.00</p>
+                    <button onclick="addToCart('Intel Core i3-10100', 100, 'cpu1.jpg', '4 Cores, 8 Threads, 3.6 GHz Base Clock. Affordable performance for everyday tasks.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product2">
+                    <img src="cpu2.jpg" alt="CPU 2">
+                    <h2>AMD Ryzen 3 3200G</h2>
+                    <p>4 Cores, 4 Threads, 3.6 GHz Base Clock. Integrated graphics for budget builds.</p>
+                    <p class="price">$90.00</p>
+                    <button onclick="addToCart('AMD Ryzen 3 3200G', 90, 'cpu2.jpg', '4 Cores, 4 Threads, 3.6 GHz Base Clock. Integrated graphics for budget builds.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product3">
+                    <img src="cpu3.jpg" alt="CPU 3">
+                    <h2>Intel Core i5-10400</h2>
+                    <p>6 Cores, 12 Threads, 2.9 GHz Base Clock. Great for multitasking and gaming.</p>
+                    <p class="price">$180.00</p>
+                    <button onclick="addToCart('Intel Core i5-10400', 180, 'cpu3.jpg', '6 Cores, 12 Threads, 2.9 GHz Base Clock. Great for multitasking and gaming.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product4">
+                    <img src="cpu4.jpg" alt="CPU 4">
+                    <h2>AMD Ryzen 5 3600</h2>
+                    <p>6 Cores, 12 Threads, 3.6 GHz Base Clock. Excellent value for gaming and productivity.</p>
+                    <p class="price">$200.00</p>
+                    <button onclick="addToCart('AMD Ryzen 5 3600', 200, 'cpu4.jpg', '6 Cores, 12 Threads, 3.6 GHz Base Clock. Excellent value for gaming and productivity.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product5">
+                    <img src="cpu5.jpg" alt="CPU 5">
+                    <h2>Intel Core i7-10700K</h2>
+                    <p>8 Cores, 16 Threads, 3.8 GHz Base Clock. High performance for gaming and creative work.</p>
+                    <p class="price">$350.00</p>
+                    <button onclick="addToCart('Intel Core i7-10700K', 350, 'cpu5.jpg', '8 Cores, 16 Threads, 3.8 GHz Base Clock. High performance for gaming and creative work.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product6">
+                    <img src="cpu6.jpg" alt="CPU 6">
+                    <h2>AMD Ryzen 7 3700X</h2>
+                    <p>8 Cores, 16 Threads, 3.6 GHz Base Clock. Versatile processor for all tasks.</p>
+                    <p class="price">$330.00</p>
+                    <button onclick="addToCart('AMD Ryzen 7 3700X', 330, 'cpu6.jpg', '8 Cores, 16 Threads, 3.6 GHz Base Clock. Versatile processor for all tasks.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product7">
+                    <img src="cpu7.jpg" alt="CPU 7">
+                    <h2>Intel Core i9-10900K</h2>
+                    <p>10 Cores, 20 Threads, 3.7 GHz Base Clock. Top-tier performance for enthusiasts.</p>
+                    <p class="price">$500.00</p>
+                    <button onclick="addToCart('Intel Core i9-10900K', 500, 'cpu7.jpg', '10 Cores, 20 Threads, 3.7 GHz Base Clock. Top-tier performance for enthusiasts.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product8">
+                    <img src="cpu8.jpg" alt="CPU 8">
+                    <h2>AMD Ryzen 9 3900X</h2>
+                    <p>12 Cores, 24 Threads, 3.8 GHz Base Clock. Extreme multitasking and gaming performance.</p>
+                    <p class="price">$450.00</p>
+                    <button onclick="addToCart('AMD Ryzen 9 3900X', 450, 'cpu8.jpg', '12 Cores, 24 Threads, 3.8 GHz Base Clock. Extreme multitasking and gaming performance.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product9">
+                    <img src="cpu9.jpg" alt="CPU 9">
+                    <h2>Intel Core i9-11900K</h2>
+                    <p>8 Cores, 16 Threads, 3.5 GHz Base Clock. Cutting-edge performance for the latest games.</p>
+                    <p class="price">$530.00</p>
+                    <button onclick="addToCart('Intel Core i9-11900K', 530, 'cpu9.jpg', '8 Cores, 16 Threads, 3.5 GHz Base Clock. Cutting-edge performance for the latest games.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product10">
+                    <img src="cpu10.jpg" alt="CPU 10">
+                    <h2>AMD Ryzen 9 5950X</h2>
+                    <p>16 Cores, 32 Threads, 3.4 GHz Base Clock. Unmatched power for professional workloads.</p>
+                    <p class="price">$800.00</p>
+                    <button onclick="addToCart('AMD Ryzen 9 5950X', 800, 'cpu10.jpg', '16 Cores, 32 Threads, 3.4 GHz Base Clock. Unmatched power for professional workloads.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product11">
+                    <img src="cpu11.jpg" alt="CPU 11">
+                    <h2>Intel Core i5-11600K</h2>
+                    <p>6 Cores, 12 Threads, 3.9 GHz Base Clock. Balanced performance for gaming and productivity.</p>
+                    <p class="price">$260.00</p>
+                    <button onclick="addToCart('Intel Core i5-11600K', 260, 'cpu11.jpg', '6 Cores, 12 Threads, 3.9 GHz Base Clock. Balanced performance for gaming and productivity.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product12">
+                    <img src="cpu12.jpg" alt="CPU 12">
+                    <h2>AMD Ryzen 5 5600X</h2>
+                    <p>6 Cores, 12 Threads, 3.7 GHz Base Clock. Exceptional performance and efficiency.</p>
+                    <p class="price">$300.00</p>
+                    <button onclick="addToCart('AMD Ryzen 5 5600X', 300, 'cpu12.jpg', '6 Cores, 12 Threads, 3.7 GHz Base Clock. Exceptional performance and efficiency.')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+	<footer>
+        <p>&copy; 2024 Kapkan's PC Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

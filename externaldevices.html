@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Devices - Kapkan's PC Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Kapkan's PC Heaven</div>
+        <nav class="top-nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <aside class="side-nav" id="sideNav">
+        <a href="gpu.html">GPUs</a>
+        <a href="cpu.html">CPUs</a>
+        <a href="motherboards.html">Motherboards</a>
+        <a href="computercases.html">Computer Cases</a>
+        <a href="powersupplies.html">Power Supplies</a>
+        <a href="cabling.html">Cabling</a>
+        <a href="fans.html">Fans</a>
+        <a href="externaldevices.html">External Devices</a>
+    </aside>
+    <div id="main">
+        <span class="open-btn" onclick="toggleNav()">&#9776;</span>
+        <section class="shop-hero">
+            <h1>External Devices</h1>
+            <p>Find the best external devices for your PC setup.</p>
+        </section>
+        <section class="shop-content">
+            <!-- Keyboards -->
+            <div class="category" onclick="toggleDropdown('keyboards')">
+                <h2>Keyboards &#9662;</h2>
+                <div class="subcategory" id="keyboards">
+                    <div class="product">
+                        <img src="keyboard1.jpg" alt="Keyboard 1">
+                        <h3>Keyboard 1</h3>
+                        <p>High-quality mechanical keyboard for gamers.</p>
+                        <p class="price">$60.00</p>
+                        <button onclick="addToCart('Keyboard 1', 60, 'keyboard1.jpg', 'High-quality mechanical keyboard for gamers.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="keyboard2.jpg" alt="Keyboard 2">
+                        <h3>Keyboard 2</h3>
+                        <p>Ergonomic keyboard for comfortable typing.</p>
+                        <p class="price">$55.00</p>
+                        <button onclick="addToCart('Keyboard 2', 55, 'keyboard2.jpg', 'Ergonomic keyboard for comfortable typing.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="keyboard3.jpg" alt="Keyboard 3">
+                        <h3>Keyboard 3</h3>
+                        <p>Compact keyboard with backlit keys.</p>
+                        <p class="price">$50.00</p>
+                        <button onclick="addToCart('Keyboard 3', 50, 'keyboard3.jpg', 'Compact keyboard with backlit keys.')">Add to Cart</button>
+                    </div>
+                    <!-- Add more products as needed -->
+                </div>
+            </div>
+            <!-- Mouses -->
+            <div class="category" onclick="toggleDropdown('mouses')">
+                <h2>Mouses &#9662;</h2>
+                <div class="subcategory" id="mouses">
+                    <div class="product">
+                        <img src="mouse1.jpg" alt="Mouse 1">
+                        <h3>Mouse 1</h3>
+                        <p>Precision gaming mouse with customizable DPI settings.</p>
+                        <p class="price">$40.00</p>
+                        <button onclick="addToCart('Mouse 1', 40, 'mouse1.jpg', 'Precision gaming mouse with customizable DPI settings.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="mouse2.jpg" alt="Mouse 2">
+                        <h3>Mouse 2</h3>
+                        <p>Ergonomic mouse with adjustable weights.</p>
+                        <p class="price">$35.00</p>
+                        <button onclick="addToCart('Mouse 2', 35, 'mouse2.jpg', 'Ergonomic mouse with adjustable weights.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="mouse3.jpg" alt="Mouse 3">
+                        <h3>Mouse 3</h3>
+                        <p>Wireless mouse with long battery life.</p>
+                        <p class="price">$30.00</p>
+                        <button onclick="addToCart('Mouse 3', 30, 'mouse3.jpg', 'Wireless mouse with long battery life.')">Add to Cart</button>
+                    </div>
+                    <!-- Add more products as needed -->
+                </div>
+            </div>
+            <!-- Headphones -->
+            <div class="category" onclick="toggleDropdown('headphones')">
+                <h2>Headphones &#9662;</h2>
+                <div class="subcategory" id="headphones">
+                    <div class="product">
+                        <img src="headphone1.jpg" alt="Headphone 1">
+                        <h3>Headphone 1</h3>
+                        <p>Over-ear headphones with noise-cancelling feature.</p>
+                        <p class="price">$80.00</p>
+                        <button onclick="addToCart('Headphone 1', 80, 'headphone1.jpg', 'Over-ear headphones with noise-cancelling feature.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="headphone2.jpg" alt="Headphone 2">
+                        <h3>Headphone 2</h3>
+                        <p>Wireless headphones with superior sound quality.</p>
+                        <p class="price">$90.00</p>
+                        <button onclick="addToCart('Headphone 2', 90, 'headphone2.jpg', 'Wireless headphones with superior sound quality.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="headphone3.jpg" alt="Headphone 3">
+                        <h3>Headphone 3</h3>
+                        <p>Compact earbuds with high-fidelity audio.</p>
+                        <p class="price">$50.00</p>
+                        <button onclick="addToCart('Headphone 3', 50, 'headphone3.jpg', 'Compact earbuds with high-fidelity audio.')">Add to Cart</button>
+                    </div>
+                    <!-- Add more products as needed -->
+                </div>
+            </div>
+            <!-- Monitors -->
+            <div class="category" onclick="toggleDropdown('monitors')">
+                <h2>Monitors &#9662;</h2>
+                <div class="subcategory" id="monitors">
+                    <div class="product">
+                        <img src="monitor1.jpg" alt="Monitor 1">
+                        <h3>Monitor 1</h3>
+                        <p>27-inch monitor with 4K resolution.</p>
+                        <p class="price">$300.00</p>
+                        <button onclick="addToCart('Monitor 1', 300, 'monitor1.jpg', '27-inch monitor with 4K resolution.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="monitor2.jpg" alt="Monitor 2">
+                        <h3>Monitor 2</h3>
+                        <p>24-inch gaming monitor with 144Hz refresh rate.</p>
+                        <p class="price">$250.00</p>
+                        <button onclick="addToCart('Monitor 2', 250, 'monitor2.jpg', '24-inch gaming monitor with 144Hz refresh rate.')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="monitor3.jpg" alt="Monitor 3">
+                        <h3>Monitor 3</h3>
+                        <p>Curved monitor with ultra-wide screen.</p>
+                        <p class="price">$400.00</p>
+                        <button onclick="addToCart('Monitor 3', 400, 'monitor3.jpg', 'Curved monitor with ultra-wide screen.')">Add to Cart</button>
+                    </div>
+                    <!-- Add more products as needed -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kapkan's PC Heaven</p>
+    </footer>
+</body>
+</html>

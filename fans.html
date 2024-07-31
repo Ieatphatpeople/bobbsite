@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fans - Kapkan's PC Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Kapkan's PC Heaven</div>
+        <nav class="top-nav">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <aside class="side-nav" id="sideNav">
+        <a href="gpu.html">GPUs</a>
+        <a href="cpu.html">CPUs</a>
+        <a href="motherboards.html">Motherboards</a>
+        <a href="computercases.html">Computer Cases</a>
+        <a href="powersupplies.html">Power Supplies</a>
+        <a href="cabling.html">Cabling</a>
+        <a href="fans.html">Fans</a>
+        <a href="externaldevices.html">External Devices</a>
+    </aside>
+    <div id="main">
+        <span class="open-btn" onclick="toggleNav()">&#9776;</span>
+        <section class="shop-hero">
+            <h1>Fans</h1>
+            <p>Keep your PC cool and quiet with our range of high-performance fans.</p>
+        </section>
+        <section class="shop-content">
+            <div class="product-list">
+                <div class="product" id="product1">
+                    <img src="fan1.jpg" alt="Fan 1">
+                    <h2>Noctua NF-A12x25</h2>
+                    <p>120mm, Premium Quiet Fan, SSO2 Bearing, High Airflow and Static Pressure.</p>
+                    <p class="price">$30.00</p>
+                    <button onclick="addToCart('Noctua NF-A12x25', 30, 'fan1.jpg', '120mm, Premium Quiet Fan, SSO2 Bearing, High Airflow and Static Pressure.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product2">
+                    <img src="fan2.jpg" alt="Fan 2">
+                    <h2>Corsair LL120 RGB</h2>
+                    <p>120mm, Dual Light Loop RGB LED, PWM Fan, High Airflow, Low Noise.</p>
+                    <p class="price">$35.00</p>
+                    <button onclick="addToCart('Corsair LL120 RGB', 35, 'fan2.jpg', '120mm, Dual Light Loop RGB LED, PWM Fan, High Airflow, Low Noise.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product3">
+                    <img src="fan3.jpg" alt="Fan 3">
+                    <h2>be quiet! Silent Wings 3</h2>
+                    <p>120mm, PWM, High-Speed Fan, Fluid-Dynamic Bearing, Virtually Inaudible.</p>
+                    <p class="price">$25.00</p>
+                    <button onclick="addToCart('be quiet! Silent Wings 3', 25, 'fan3.jpg', '120mm, PWM, High-Speed Fan, Fluid-Dynamic Bearing, Virtually Inaudible.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product4">
+                    <img src="fan4.jpg" alt="Fan 4">
+                    <h2>NZXT Aer RGB 2</h2>
+                    <p>120mm, RGB LED, Fluid Dynamic Bearing, PWM Fan, Advanced Lighting Customizations.</p>
+                    <p class="price">$30.00</p>
+                    <button onclick="addToCart('NZXT Aer RGB 2', 30, 'fan4.jpg', '120mm, RGB LED, Fluid Dynamic Bearing, PWM Fan, Advanced Lighting Customizations.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product5">
+                    <img src="fan5.jpg" alt="Fan 5">
+                    <h2>Thermaltake Riing Plus 12 RGB</h2>
+                    <p>120mm, RGB LED, High Static Pressure, Hydraulic Bearing, PWM Fan.</p>
+                    <p class="price">$32.00</p>
+                    <button onclick="addToCart('Thermaltake Riing Plus 12 RGB', 32, 'fan5.jpg', '120mm, RGB LED, High Static Pressure, Hydraulic Bearing, PWM Fan.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product6">
+                    <img src="fan6.jpg" alt="Fan 6">
+                    <h2>Cooler Master MasterFan Pro 120</h2>
+                    <p>120mm, Air Balance RGB Fan, Quiet Spin, Smart Fan Sensor for Jam Protection.</p>
+                    <p class="price">$28.00</p>
+                    <button onclick="addToCart('Cooler Master MasterFan Pro 120', 28, 'fan6.jpg', '120mm, Air Balance RGB Fan, Quiet Spin, Smart Fan Sensor for Jam Protection.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product7">
+                    <img src="fan7.jpg" alt="Fan 7">
+                    <h2>Arctic P12 PWM PST</h2>
+                    <p>120mm, Pressure-Optimized Fan, PWM Sharing Technology, Low Noise.</p>
+                    <p class="price">$12.00</p>
+                    <button onclick="addToCart('Arctic P12 PWM PST', 12, 'fan7.jpg', '120mm, Pressure-Optimized Fan, PWM Sharing Technology, Low Noise.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product8">
+                    <img src="fan8.jpg" alt="Fan 8">
+                    <h2>Phanteks PH-F120MP</h2>
+                    <p>120mm, High Static Pressure, PWM Fan, Designed for Radiators and Heatsinks.</p>
+                    <p class="price">$15.00</p>
+                    <button onclick="addToCart('Phanteks PH-F120MP', 15, 'fan8.jpg', '120mm, High Static Pressure, PWM Fan, Designed for Radiators and Heatsinks.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product9">
+                    <img src="fan9.jpg" alt="Fan 9">
+                    <h2>Fractal Design Dynamic X2 GP-12</h2>
+                    <p>120mm, High Airflow Fan, Long Life Bearing, Optimized Fan Geometry.</p>
+                    <p class="price">$14.00</p>
+                    <button onclick="addToCart('Fractal Design Dynamic X2 GP-12', 14, 'fan9.jpg', '120mm, High Airflow Fan, Long Life Bearing, Optimized Fan Geometry.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product10">
+                    <img src="fan10.jpg" alt="Fan 10">
+                    <h2>Scythe Kaze Flex 120 PWM</h2>
+                    <p>120mm, Quiet Fan, Fluid Dynamic Bearing, PWM Control, Vibration and Shock Resistant.</p>
+                    <p class="price">$13.00</p>
+                    <button onclick="addToCart('Scythe Kaze Flex 120 PWM', 13, 'fan10.jpg', '120mm, Quiet Fan, Fluid Dynamic Bearing, PWM Control, Vibration and Shock Resistant.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product11">
+                    <img src="fan11.jpg" alt="Fan 11">
+                    <h2>Corsair ML120 PRO</h2>
+                    <p>120mm, Magnetic Levitation Fan, PWM Control, Quiet Operation, High Static Pressure.</p>
+                    <p class="price">$25.00</p>
+                    <button onclick="addToCart('Corsair ML120 PRO', 25, 'fan11.jpg', '120mm, Magnetic Levitation Fan, PWM Control, Quiet Operation, High Static Pressure.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product12">
+                    <img src="fan12.jpg" alt="Fan 12">
+                    <h2>Cooler Master SickleFlow 120 V2</h2>
+                    <p>120mm, ARGB Fan, Enhanced Fan Frame, Sealed Bearing, Improved Cooling Performance.</p>
+                    <p class="price">$20.00</p>
+                    <button onclick="addToCart('Cooler Master SickleFlow 120 V2', 20, 'fan12.jpg', '120mm, ARGB Fan, Enhanced Fan Frame, Sealed Bearing, Improved Cooling Performance.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product13">
+                    <img src="fan13.jpg" alt="Fan 13">
+                    <h2>Thermaltake Pure 12 ARGB Sync</h2>
+                    <p>120mm, ARGB Fan, High Airflow, Hydraulic Bearing, 9 Fan Blade Design.</p>
+                    <p class="price">$18.00</p>
+                    <button onclick="addToCart('Thermaltake Pure 12 ARGB Sync', 18, 'fan13.jpg', '120mm, ARGB Fan, High Airflow, Hydraulic Bearing, 9 Fan Blade Design.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product14">
+                    <img src="fan14.jpg" alt="Fan 14">
+                    <h2>NZXT Aer P120</h2>
+                    <p>120mm, High Static Pressure Fan, Fluid Dynamic Bearing, PWM Fan, Optimized for Radiators.</p>
+                    <p class="price">$25.00</p>
+                    <button onclick="addToCart('NZXT Aer P120', 25, 'fan14.jpg', '120mm, High Static Pressure Fan, Fluid Dynamic Bearing, PWM Fan, Optimized for Radiators.')">Add to Cart</button>
+                </div>
+                <div class="product" id="product15">
+                    <img src="fan15.jpg" alt="Fan 15">
+                    <h2>EK-Vardar EVO 120ER</h2>
+                    <p>120mm, High Performance Fan, PWM Fan, Extended Range, High Static Pressure.</p>
+                    <p class="price">$22.00</p>
+                    <button onclick="addToCart('EK-Vardar EVO 120ER', 22, 'fan15.jpg', '120mm, High Performance Fan, PWM Fan, Extended Range, High Static Pressure.')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kapkan's PC Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
